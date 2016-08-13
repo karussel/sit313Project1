@@ -1,0 +1,142 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F403A54B-BDF7-474A-ACC9-5F285C629D89}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Project1</RootNamespace>
+    <AssemblyName>Project1</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.1.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StageActivity.cs" />
+    <Compile Include="SettingActivity.cs" />
+    <Compile Include="AboutActivity.cs" />
+    <Compile Include="CharacterArrayAdapter.cs" />
+    <Compile Include="CharacterListActivity.cs" />
+    <Compile Include="FrameDataActivity.cs" />
+    <Compile Include="CharacterActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable\Super_Smash_Bros_Melee_logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Character.axml" />
+    <AndroidResource Include="Resources\layout\Stage.axml" />
+    <AndroidResource Include="Resources\drawable\bowserIcon.png" />
+    <AndroidResource Include="Resources\layout\charListLayout.axml" />
+    <AndroidResource Include="Resources\drawable\captainfalconIcon.png" />
+    <AndroidResource Include="Resources\drawable\donkeykongIcon.png" />
+    <AndroidResource Include="Resources\drawable\drmarioIcon.png" />
+    <AndroidResource Include="Resources\drawable\falcoIcon.png" />
+    <AndroidResource Include="Resources\drawable\foxIcon.png" />
+    <AndroidResource Include="Resources\drawable\ganondorfIcon.png" />
+    <AndroidResource Include="Resources\drawable\iceclimbersIcon.png" />
+    <AndroidResource Include="Resources\drawable\jigglypuffIcon.png" />
+    <AndroidResource Include="Resources\drawable\kirbyIcon.png" />
+    <AndroidResource Include="Resources\drawable\linkIcon.png" />
+    <AndroidResource Include="Resources\drawable\luigiIcon.png" />
+    <AndroidResource Include="Resources\drawable\marioIcon.png" />
+    <AndroidResource Include="Resources\drawable\marthIcon.png" />
+    <AndroidResource Include="Resources\drawable\mewtwoIcon.png" />
+    <AndroidResource Include="Resources\drawable\mrgameandwatchIcon.png" />
+    <AndroidResource Include="Resources\drawable\nessIcon.png" />
+    <AndroidResource Include="Resources\drawable\peachIcon.png" />
+    <AndroidResource Include="Resources\drawable\pichuIcon.png" />
+    <AndroidResource Include="Resources\drawable\pikachuIcon.png" />
+    <AndroidResource Include="Resources\drawable\royIcon.png" />
+    <AndroidResource Include="Resources\drawable\samusIcon.png" />
+    <AndroidResource Include="Resources\drawable\sheikIcon.png" />
+    <AndroidResource Include="Resources\drawable\yoshiIcon.png" />
+    <AndroidResource Include="Resources\drawable\younglinkIcon.png" />
+    <AndroidResource Include="Resources\drawable\zeldaIcon.png" />
+    <AndroidResource Include="Resources\layout\CharacterListActivityLayout.axml" />
+    <AndroidResource Include="Resources\layout\CharacterLayout.axml" />
+    <AndroidResource Include="Resources\drawable\bowser1.jpg" />
+    <AndroidResource Include="Resources\drawable\2.jpg" />
+    <AndroidResource Include="Resources\drawable\3.jpg" />
+    <AndroidResource Include="Resources\drawable\4.jpg" />
+    <AndroidResource Include="Resources\drawable\5.jpg" />
+    <AndroidResource Include="Resources\drawable\6.jpg" />
+    <AndroidResource Include="Resources\drawable\7.jpg" />
+    <AndroidResource Include="Resources\drawable\8.jpg" />
+    <AndroidResource Include="Resources\drawable\9.jpg" />
+    <AndroidResource Include="Resources\drawable\10.jpg" />
+    <AndroidResource Include="Resources\drawable\11.jpg" />
+    <AndroidResource Include="Resources\drawable\12.jpg" />
+    <AndroidResource Include="Resources\drawable\13.jpg" />
+    <AndroidResource Include="Resources\drawable\14.jpg" />
+    <AndroidResource Include="Resources\drawable\15.jpg" />
+    <AndroidResource Include="Resources\drawable\16.jpg" />
+    <AndroidResource Include="Resources\drawable\17.jpg" />
+    <AndroidResource Include="Resources\drawable\18.jpg" />
+    <AndroidResource Include="Resources\drawable\19.jpg" />
+    <AndroidResource Include="Resources\drawable\20.jpg" />
+    <AndroidResource Include="Resources\drawable\21.jpg" />
+    <AndroidResource Include="Resources\drawable\22.jpg" />
+    <AndroidResource Include="Resources\drawable\23.jpg" />
+    <AndroidResource Include="Resources\drawable\24.jpg" />
+    <AndroidResource Include="Resources\drawable\25.jpg" />
+    <AndroidResource Include="Resources\drawable\26.jpg" />
+    <AndroidResource Include="Resources\layout\FramadataLayout.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>
